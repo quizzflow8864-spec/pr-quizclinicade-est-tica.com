@@ -1,0 +1,33 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/_nuxt/builds/latest.json",
+      "destination": "/js/77fe3c84-d1cd-468a-ac22-457ca36ec63a.json"
+    },
+    {
+      "source": "/_nuxt/builds/meta/(.*)",
+      "destination": "/js/77fe3c84-d1cd-468a-ac22-457ca36ec63a.json"
+    },
+    {
+      "source": "/_nuxt/([^/]+\\.css)",
+      "destination": "/css/$1"
+    },
+    {
+      "source": "/_nuxt/([^/]+\\.js)",
+      "destination": "/js/$1"
+    },
+    {
+      "source": "/js/([^/]+\\.css)",
+      "destination": "/css/$1"
+    },
+    {
+      "source": "/pt",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pt/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
